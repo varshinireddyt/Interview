@@ -18,10 +18,24 @@ public class Utility {
 		}
 	}
 	
+	private int doFibonacci(int n) {
+		
+	if( n<=1) {
+		return n;
+	}
+	else {
+		
+	
+	return doFibonacci(n-1) + doFibonacci(n-2);
+	}
+	}
+	
 	public static void main(String[] args) {
 		
 		Utility obj = new Utility();
-		obj.findUnique("abc");
+//		obj.findUnique("abc");
+		
+		System.out.println(obj.doFibonacci(9));
 	}
 
 }
